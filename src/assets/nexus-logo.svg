@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <defs>
+    <!-- Realistic soft drop shadow matching the official logo -->
+    <filter id="nexus-shadow" x="-20%" y="-20%" width="150%" height="150%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="8" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <!-- Subtle glow on hover/accent -->
+    <filter id="cyan-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00F5FF" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <g filter="url(#nexus-shadow)">
+    <!-- 1. Left Letter 'N' in Vibrant Electric Purple -->
+    <path
+      d="M 235 215 
+         C 248 198 272 205 285 220 
+         L 395 365 
+         C 382 390 380 415 390 440 
+         C 340 500 375 600 425 645 
+         C 438 658 450 648 455 632 
+         L 468 595 
+         C 438 565 418 520 405 470 
+         C 365 460 330 480 300 520 
+         L 245 350 
+         L 175 660 
+         C 168 678 145 682 135 665 
+         C 128 650 135 628 142 605 
+         Z"
+      fill="#7B16FF"
+    />
+
+    <!-- Accurate solid geometric curve for the N -->
+    <path
+      d="M 232 215
+         C 245 195 270 200 282 222
+         L 395 372
+         C 380 405 385 435 395 450
+         C 350 515 380 610 428 652
+         C 440 662 452 650 455 635
+         L 458 600
+         C 430 570 410 520 402 468
+         C 358 460 325 485 292 530
+         L 242 340
+         L 172 658
+         C 165 678 142 682 132 662
+         C 125 645 132 622 140 598
+         Z"
+      fill="#7B16FF"
+      display="none"
+    />
+
+    <!-- Combined Precise Vector for N (Letter N with iconic stylized rounded peaks and angles) -->
+    <path
+      d="M 235 215
+         C 248 196 276 204 290 225
+         L 396 375
+         C 382 405 382 425 390 445
+         C 345 505 375 605 428 652
+         C 442 664 456 652 458 635
+         L 458 590
+         C 432 555 412 505 402 455
+         L 295 530
+         L 245 330
+         L 172 660
+         C 165 680 140 682 130 662
+         C 124 645 130 620 138 595
+         Z"
+      fill="#7C0AFF"
+    />
+
+    <!-- 2. Right Letter 'M' in Vibrant Electric Purple with dual rounded crests -->
+    <path
+      d="M 520 405
+         C 535 340 550 270 565 258
+         C 582 245 605 255 618 280
+         L 675 390
+         C 690 420 705 435 720 435
+         C 735 435 750 415 765 380
+         L 785 340
+         C 798 315 820 320 832 340
+         C 845 360 855 400 865 460
+         L 888 670
+         C 892 688 878 702 862 698
+         C 848 692 842 675 838 655
+         L 818 550
+         C 805 520 788 535 778 558
+         L 735 638
+         C 722 658 698 662 682 645
+         C 668 630 655 595 640 550
+         L 615 520
+         C 580 520 545 480 520 405
+         Z"
+      fill="#7C0AFF"
+    />
+
+    <!-- 3. Center Electric Cyan Lightning Bolt (Rayo) Interlocking the N and M -->
+    <path
+      d="M 580 135
+         L 512 395
+         C 460 380 400 375 380 395
+         C 365 415 375 440 400 455
+         C 445 478 480 475 510 460
+         L 430 760
+         L 485 520
+         C 530 535 590 540 615 520
+         C 630 502 622 478 595 460
+         C 555 438 522 440 500 450
+         L 580 135
+         Z"
+      fill="#00F5FF"
+    />
+  </g>
+</svg>

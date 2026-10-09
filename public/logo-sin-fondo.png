@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <defs>
+    <!-- Realistic soft drop shadow matching original PNG -->
+    <filter id="nexus-logo-drop-shadow" x="-30%" y="-30%" width="160%" height="160%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="blur" />
+      <feOffset dx="8" dy="16" result="offset" />
+      <feComponentTransfer in="offset" result="shadow">
+        <feFuncA type="linear" slope="0.45" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#nexus-logo-drop-shadow)">
+    <!-- 1. Left Stylized Letter 'N' in Electric Purple -->
+    <path
+      d="M 234 216
+         C 240 206 254 206 262 216
+         L 392 376
+         C 376 408 376 432 388 454
+         C 342 516 374 614 426 654
+         C 438 664 454 656 458 642
+         L 472 584
+         C 440 550 420 500 410 450
+         L 292 532
+         C 282 540 268 534 264 522
+         L 242 344
+         L 168 672
+         C 162 690 138 694 126 676
+         C 120 660 126 636 134 612
+         L 234 216
+         Z"
+      fill="#7B00F7"
+    />
+
+    <!-- 2. Right Stylized Letter 'M' in Electric Purple -->
+    <path
+      d="M 518 412
+         C 532 344 546 272 562 258
+         C 578 244 602 254 614 278
+         L 678 392
+         C 692 418 708 434 722 434
+         C 736 434 752 414 766 380
+         L 788 338
+         C 800 316 824 320 836 340
+         C 848 360 858 402 868 464
+         L 888 676
+         C 892 694 876 708 860 704
+         C 846 698 840 682 836 662
+         L 816 554
+         C 804 524 786 538 776 562
+         L 734 642
+         C 720 662 696 666 680 648
+         C 666 632 654 596 638 552
+         L 614 522
+         C 578 522 544 482 518 412
+         Z"
+      fill="#7B00F7"
+    />
+
+    <!-- 3. Center Electric Cyan Lightning Bolt Interlocking N & M -->
+    <path
+      d="M 580 134
+         L 512 404
+         C 464 386 404 376 382 396
+         C 362 414 372 440 396 454
+         C 434 474 476 472 510 458
+         L 426 762
+         L 486 518
+         C 528 534 588 544 616 522
+         C 636 506 626 480 600 464
+         C 564 446 526 448 496 458
+         L 580 134
+         Z"
+      fill="#00F5FF"
+    />
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "nexusmóvil",
+  "description": "Tienda especializada en audífonos Hi-Fi IEMs KZ, QKZ, Moondrop, periféricos gamer, adaptadores y componentes PC de alto rendimiento con pedidos directos por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

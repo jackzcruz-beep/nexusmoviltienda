@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile with role-based access for administration.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Firebase Auth UID"
+        },
+        "email": {
+          "type": "string",
+          "description": "User email address"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "User display name"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["admin", "customer"],
+          "description": "User role: only jackzcruz@gmail.com is granted admin"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "StoreSettings": {
+      "title": "StoreSettings",
+      "description": "Public store configuration and contact details.",
+      "type": "object",
+      "properties": {
+        "storeName": { "type": "string" },
+        "whatsappNumber": { "type": "string" },
+        "address": { "type": "string" },
+        "workingHours": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["storeName", "whatsappNumber"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User accounts with roles. Admin access restricted to jackzcruz@gmail.com."
+    },
+    "/settings/{settingId}": {
+      "schema": "StoreSettings",
+      "description": "Public store settings managed by authorized admin."
+    }
+  }
+}

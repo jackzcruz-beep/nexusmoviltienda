@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nexusmóvil</title>
+    <meta name="description" content="Tienda especializada en audífonos Hi-Fi IEMs KZ, QKZ, Moondrop, periféricos gamer, adaptadores y componentes PC de alto rendimiento con pedidos directos por WhatsApp." />
+    <meta property="og:title" content="nexusmóvil" />
+    <meta property="og:description" content="Tienda especializada en audífonos Hi-Fi IEMs KZ, QKZ, Moondrop, periféricos gamer, adaptadores y componentes PC de alto rendimiento con pedidos directos por WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/nexus-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      /* Polyfill to safely allow browser extensions to set window.fetch without TypeError */
+      (function() {
+        try {
+          var _f = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return _f; },
+            set: function(val) { _f = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#0b0f17] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

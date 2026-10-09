@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Purple Gradient for Letters N & M -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" />
+      <stop offset="50%" stop-color="#7c0aff" />
+      <stop offset="100%" stop-color="#5b06bd" />
+    </linearGradient>
+
+    <!-- Cyan Neon Gradient for Central Lightning Bolt -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#00f5ff" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Dynamic Glow & Drop Shadow -->
+    <filter id="nexusShadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#7c0aff" flood-opacity="0.3" />
+    </filter>
+
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00f5ff" flood-opacity="0.75" />
+    </filter>
+  </defs>
+
+  <g filter="url(#nexusShadow)">
+    <!-- Stylized Modern Letter N -->
+    <path
+      d="M 88 120
+         C 88 106 99 96 113 96
+         L 145 96
+         C 156 96 166 103 170 114
+         L 242 278
+         L 242 120
+         C 242 106 253 96 267 96
+         L 277 96
+         C 291 96 302 106 302 120
+         L 302 245
+         L 248 300
+         L 172 174
+         L 172 384
+         C 172 398 161 408 147 408
+         L 113 408
+         C 99 408 88 398 88 384
+         Z"
+      fill="url(#purpleGrad)"
+    />
+
+    <!-- Stylized Modern Letter M -->
+    <path
+      d="M 276 270
+         L 310 220
+         L 346 300
+         L 394 186
+         C 399 174 411 166 424 166
+         L 434 166
+         C 448 166 459 177 459 191
+         L 459 384
+         C 459 398 448 408 434 408
+         L 412 408
+         C 398 408 387 398 387 384
+         L 387 266
+         L 354 346
+         C 350 356 340 362 329 362
+         C 319 362 309 356 304 346
+         L 272 276
+         Z"
+      fill="url(#purpleGrad)"
+    />
+
+    <!-- Electric Cyan Lightning Bolt in the Center -->
+    <path
+      filter="url(#cyanGlow)"
+      d="M 284 80
+         L 204 250
+         L 262 250
+         L 228 432
+         L 318 226
+         L 264 226
+         Z"
+      fill="url(#cyanGrad)"
+    />
+  </g>
+</svg>
